@@ -9,7 +9,7 @@ div.container {
 }
 
 header, footer {
-    padding: 1em;
+    padding: 0.5em;
     color: white;
     background-color: #c9cbfd;
     clear: left;
@@ -38,6 +38,33 @@ article {
     padding: 1em;
     overflow: hidden;
 }
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
 </style>
 </head>
 
@@ -46,14 +73,17 @@ article {
 
 <header>
    <font size="5"><h1 style="color:lavender;">Miranda Luong</h1></font>
-<hr>
 </header>
   
 <nav>
   <ul>
-    <h2 style="text-align:center; color:lavender">Links</h2>
-	<p style="text-align:center;"><a href="https://www.instagram.com/mirrandal/">Instagram</a></p>
-    <br><p style="text-align:center;"><a href="https://scratch.mit.edu/projects/166194634/">Scratch Side 		Scroller Game</a></p>
+    <h2 style="text-align:center; color:lavender">More</h2>
+	<p id="demo" style="display:none;text-align:center;"><a href="https://www.instagram.com/mirrandal/">Instagram</a></p>
+    <p id="linked" style="display:none;text-align:center;"><a href="https://www.instagram.com/mirrandal/">LinkedIn</a></p>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Social Media</button>
+    
+    <br><p id="scratch" style="display:none;text-align:center;"><a href="https://scratch.mit.edu/projects/166194634/">Scratch Side Scroller Game</a></p>
+    <br><button type="button" onclick="document.getElementById('scratch').style.display='block'">Projects</button>
   </ul>
 </nav>
 
@@ -83,3 +113,5 @@ article {
 
 </body>
 </html>
+
+
