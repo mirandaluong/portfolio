@@ -38,6 +38,45 @@ article {
     padding: 1em;
     overflow: hidden;
 }
+.button {
+    background-color: #4CAF50; /* White */
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 13px 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: #c9cbfd; 
+    border: 2px solid #c9cbfd;
+}
+
+.button1:hover {
+    background-color: #c9cbfd;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: #c9cbfd; 
+    border: 2px solid #c9cbfd;
+}
+
+.button2:hover {
+    background-color: #c9cbfd;
+    color: white;
+}
+
+
+
 </style>
 </head>
 
@@ -50,26 +89,25 @@ article {
   
 <nav>
   <ul>
-    <h2 style="text-align:center; color:lavender">More</h2>
-	<p id="demo" style="display:none;text-align:center;"><a href="https://www.instagram.com/mirrandal/">Instagram</a></p>
-    <p id="linked" style="display:none;text-align:center;"><a href="https://www.instagram.com/mirrandal/">LinkedIn</a></p>
-    <button type="button" onclick="document.getElementById('demo').style.display='block'">Social Media</button>
-    
-    <br><p id="scratch" style="display:none;text-align:center;"><a href="https://scratch.mit.edu/projects/166194634/">Scratch Side Scroller Game</a></p>
-    <br><button type="button" onclick="document.getElementById('scratch').style.display='block'">Projects</button>
+    <h2 style="text-align:center; color:#c9cbfd">More</h2>
+	
+    <button class="button button1">Social Media</button>
+<br><button class="button button2">Projects</button>
+
   </ul>
 </nav>
 
 <article> 
-  <h2 style="text-align:center;color:lavender">Biography</h2>
+  
+  <h2 style="text-align:center;color:#c9cbfd">Biography</h2>
 <p style="text-align:center; font-family:courier"> My name is Miranda Luong and I am a senior attending Independence High School. I was born in San Jose, California and still reside here with my mother and my brother. At school, I am involved in the Asian American Donor Program, Interact Club, and National Honor Society.</p>
 
 
-<h2 style="text-align:center; color:lavender">Likes & Dislikes</h2>
+<h2 style="text-align:center; color:#c9cbfd">Likes & Dislikes</h2>
 <p style="text-align:center; font-family:courier"><i>Dislikes: </i>being late, being tickled, raisins, kale, cottage cheese
-<br><i>Likes: </i>animated and romantic comedy films, <i>Wonder </i>by Raquel J. Palacio, animals, anime, pineapple pizza</p>
+<br><i>Likes: </i>animated and romantic comedy films, <i>Wonder </i>by Raquel J. Palacio, feeling of laughing really hard, art, animals, anime, pineapple pizza</p>
 
-<h2 style="text-align:center; color:lavender">Fun Facts</h2>
+<h2 style="text-align:center; color:#c9cbfd">Fun Facts</h2>
 
 <ul style="list-style-type:circle">
 	<p style="text-align:center; font-family:courier"><li>I played the flute for three years.</li></p>
@@ -84,5 +122,3 @@ article {
 
 </body>
 </html>
-
-
